@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="fxborderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="665.0" prefWidth="1300.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shop.Dashboard">
+   <left>
+      <VBox prefHeight="730.0" prefWidth="176.0" style="-fx-background-color: #002356;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnDashboard" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#OnDashboard" prefHeight="41.0" prefWidth="147.0" style="-fx-background-color: #002356; -fx-text-fill: white;" text="Dashboard">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="HOME" size="20" />
+               </graphic>
+               <font>
+                  <Font name="SansSerif Regular" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="15.0" top="25.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnCustomer" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#OnCustomer" prefHeight="41.0" prefWidth="147.0" style="-fx-background-color: #002356; -fx-text-fill: white;" text="Customer">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="USERS" size="20" translateX="-1.0" />
+               </graphic>
+               <font>
+                  <Font name="SansSerif Regular" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="15.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnProducts" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#OnProduct" prefHeight="41.0" prefWidth="147.0" style="-fx-background-color: #002356; -fx-text-fill: white;" text="Products">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="PRODUCT" size="20" translateX="-1.0" />
+               </graphic>
+               <font>
+                  <Font name="SansSerif Regular" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="15.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnOrder" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#OnOrder" prefHeight="41.0" prefWidth="147.0" style="-fx-background-color: #002356; -fx-text-fill: white;" text="Orders">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="" size="20" translateX="-1.0" />
+               </graphic>
+               <font>
+                  <Font name="SansSerif Regular" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="15.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnPayment" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#OnPayment" prefHeight="41.0" prefWidth="147.0" style="-fx-background-color: #002356; -fx-text-fill: white;" text="Payments">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="USD" size="20" translateX="-1.0" />
+               </graphic>
+               <font>
+                  <Font name="SansSerif Regular" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="15.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnLogout" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#OnLogout" prefHeight="41.0" prefWidth="152.0" style="-fx-background-color: #002356; -fx-text-fill: white;" text="Logout">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="" size="20" translateX="-1.0" />
+               </graphic>
+               <font>
+                  <Font name="SansSerif Regular" size="15.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="20.0" top="200.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <AnchorPane prefHeight="96.0" prefWidth="1390.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="36.0" layoutY="6.0" prefHeight="96.0" prefWidth="176.0" style="-fx-background-color: #002356; -fx-text-fill: white;" text="MINI SHOP" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Century Gothic Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblprintUser" layoutX="1072.0" layoutY="20.0" prefHeight="28.0" prefWidth="136.0" textFill="#efefef">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="WHITE" glyphName="USER" layoutX="997.0" layoutY="71.0" opacity="0.63" size="65" text="" wrappingWidth="55.0">
+               <cursor>
+                  <Cursor fx:constant="CROSSHAIR" />
+               </cursor>
+            </FontAwesomeIcon>
+            <Label fx:id="lblPrintUserType" layoutX="1072.0" layoutY="57.0" prefHeight="23.0" prefWidth="109.0" textFill="#ffee00">
+               <font>
+                  <Font name="Century Gothic Italic" size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow color="#202020" />
+         </effect>
+      </AnchorPane>
+   </top>
+</BorderPane>
